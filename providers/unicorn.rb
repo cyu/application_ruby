@@ -43,15 +43,6 @@ action :before_compile do
 end
 
 action :before_deploy do
-end
-
-action :before_migrate do
-end
-
-action :before_symlink do
-end
-
-action :before_restart do
 
   new_resource = @new_resource
 
@@ -90,6 +81,15 @@ action :before_restart do
     )
   end
 
+end
+
+action :before_migrate do
+end
+
+action :before_symlink do
+end
+
+action :before_restart do
 end
 
 action :after_restart do
